@@ -9,10 +9,15 @@
 
 Code savers like: Lazy.Create(...) which allow for type inference</Description>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageLicenseUrl>https://github.com/electricessence/Open/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseUrl>https://github.com/electricessence/Open.Lazy.Extensions/blob/master/LISCENSE.md</PackageLicenseUrl>
     <PackageId>Open.Lazy.Extensions</PackageId>
     <AssemblyName>Open.Lazy.Extensions</AssemblyName>
     <RootNamespace>System</RootNamespace>
+    <Copyright>https://github.com/electricessence/Open.Lazy.Extensions/blob/master/LISCENSE.md</Copyright>
+    <PackageProjectUrl>https://github.com/electricessence/Open.Lazy.Extensions/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/electricessence/Open.Lazy.Extensions/</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>dotnet, dotnet-core, dotnetcore, cs, lazy</PackageTags>
   </PropertyGroup>
 
 </Project>
