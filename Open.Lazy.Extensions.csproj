@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <Authors>electricessence</Authors>
+    <Company />
+    <Product />
+    <Description>Simple set of Lazy extensions.
+
+Code savers like: Lazy.Create(...) which allow for type inference</Description>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageLicenseUrl>https://github.com/electricessence/Open/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageId>Open.Lazy.Extensions</PackageId>
+    <AssemblyName>Open.Lazy.Extensions</AssemblyName>
+    <RootNamespace>System</RootNamespace>
+  </PropertyGroup>
+
+</Project>
