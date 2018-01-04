@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>electricessence</Authors>
     <Company />
     <Product />
@@ -18,6 +18,15 @@ Code savers like: Lazy.Create(...) which allow for type inference</Description>
     <RepositoryUrl>https://github.com/electricessence/Open.Lazy.Extensions/</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>dotnet, dotnet-core, dotnetcore, cs, lazy</PackageTags>
+    <Version>1.1.0</Version>
+    <PackageReleaseNotes>Updated to .NET Standard for compatability.</PackageReleaseNotes>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove=".git" />
+    <None Remove=".gitignore" />
+    <None Remove="LISCENSE.md" />
+    <None Remove="README.md" />
+  </ItemGroup>
 
 </Project>
