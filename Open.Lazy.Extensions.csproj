@@ -1,40 +1,36 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <Authors>electricessence</Authors>
-    <Company />
-    <Product />
-    <Description>Simple set of Lazy extensions.
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+		<LangVersion>latest</LangVersion>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Authors>electricessence</Authors>
+		<Description>Simple set of Lazy extensions.
 
 Code savers like: Lazy.Create(...) which allow for type inference</Description>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageLicenseUrl>https://github.com/electricessence/Open.Lazy.Extensions/blob/master/LISCENSE.md</PackageLicenseUrl>
-    <PackageId>Open.Lazy.Extensions</PackageId>
-    <AssemblyName>Open.Lazy.Extensions</AssemblyName>
-    <RootNamespace>System</RootNamespace>
-    <Copyright>https://github.com/electricessence/Open.Lazy.Extensions/blob/master/LISCENSE.md</Copyright>
-    <PackageProjectUrl>https://github.com/electricessence/Open.Lazy.Extensions/</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/electricessence/Open.Lazy.Extensions/</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <PackageTags>dotnet, dotnet-core, dotnetcore, cs, lazy</PackageTags>
-    <Version>1.1.0</Version>
-    <PackageReleaseNotes>Updated to .NET Standard for compatability.</PackageReleaseNotes>
-  </PropertyGroup>
+		<PackageTags>lazy;extensions</PackageTags>
+		<Copyright>© electricessence (Oren F.) All rights reserved.</Copyright>
+		<PackageProjectUrl>https://github.com/Open-NET-Libraries/Open.Lazy.Extensions/</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Open-NET-Libraries/Open.Lazy.Extensions/</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<Version>1.1.1</Version>
+		<PackageReleaseNotes></PackageReleaseNotes>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<PackageIcon>logo.png</PackageIcon>
+		<RootNamespace>System</RootNamespace>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <LangVersion>latest</LangVersion>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <LangVersion>latest</LangVersion>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove=".git" />
-    <None Remove=".gitignore" />
-    <None Remove="LISCENSE.md" />
-    <None Remove="README.md" />
-  </ItemGroup>
+	<ItemGroup>
+		<None Remove=".git" />
+		<None Remove=".gitignore" />
+		<None Include="logo.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
 
 </Project>
