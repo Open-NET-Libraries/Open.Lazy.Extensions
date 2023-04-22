@@ -15,7 +15,7 @@ internal static class LazyHelper<T>
 
 public static class Lazy
 {
-	public static Lazy<T> Create<T>(T value)
+	public static Lazy<T> FromValue<T>(T value)
 #if NETSTANDARD2_1
 		=> new(value);
 #else
