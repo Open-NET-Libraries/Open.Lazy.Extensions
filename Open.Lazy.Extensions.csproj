@@ -1,23 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>netstandard2.0</TargetFramework>
+		<TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
 		<LangVersion>latest</LangVersion>
 		<Nullable>enable</Nullable>
 		<EnableNETAnalyzers>true</EnableNETAnalyzers>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Authors>electricessence</Authors>
-		<Description>
-			Simple set of Lazy extensions.
+		<Description>Simple set of Lazy extensions.
 
-			Code savers like: Lazy.Create(...) which allow for type inference
+Code savers like: Lazy.Create(...) which allow for type inference
 		</Description>
 		<PackageTags>lazy;extensions</PackageTags>
 		<Copyright>© electricessence (Oren F.) All rights reserved.</Copyright>
 		<PackageProjectUrl>https://github.com/Open-NET-Libraries/Open.Lazy.Extensions/</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/Open-NET-Libraries/Open.Lazy.Extensions/</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<Version>1.2.0</Version>
+		<Version>1.3.0</Version>
 		<PackageReleaseNotes></PackageReleaseNotes>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
@@ -25,6 +24,7 @@
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<PackageIcon>logo.png</PackageIcon>
 		<RootNamespace>System</RootNamespace>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -34,6 +34,14 @@
 			<Pack>True</Pack>
 			<PackagePath></PackagePath>
 		</None>
+		<None Include=".\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+
 	</ItemGroup>
 
 </Project>

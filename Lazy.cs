@@ -5,12 +5,23 @@ namespace System;
 
 internal static class LazyHelper<T>
 {
-	public static T GetDefault() => default!;
-	public static readonly Lazy<T> Default = Lazy.Create(GetDefault);
+#if NETSTANDARD2_1
+	public static readonly Lazy<T> Default = new(default(T)!);
+#else
+
+	public static readonly Lazy<T> Default = new(() => default!);
+#endif
 }
 
 public static class Lazy
 {
+	public static Lazy<T> Create<T>(T value)
+#if NETSTANDARD2_1
+		=> new(value);
+#else
+		=> new(() => value);
+#endif
+
 	public static Lazy<T> Create<T>(Func<T> factory, LazyThreadSafetyMode mode = LazyThreadSafetyMode.ExecutionAndPublication)
 	{
 		if (factory == null)
