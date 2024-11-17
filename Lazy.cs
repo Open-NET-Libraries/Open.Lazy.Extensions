@@ -23,13 +23,7 @@ public static class Lazy
 #endif
 
 	public static Lazy<T> Create<T>(Func<T> factory, LazyThreadSafetyMode mode = LazyThreadSafetyMode.ExecutionAndPublication)
-	{
-		if (factory == null)
-			throw new ArgumentNullException(nameof(factory));
-		Contract.EndContractBlock();
+		=> new (factory, mode);
 
-		return new Lazy<T>(factory, mode);
-	}
-
-	public static Lazy<T> Default<T>() => LazyHelper<T>.Default;
+    public static Lazy<T> Default<T>() => LazyHelper<T>.Default;
 }
